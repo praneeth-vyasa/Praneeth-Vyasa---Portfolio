@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0ad4e;
+}
+.nav-link.active {
+    color: #a4e608; /* Color of the active link */
+    font-weight: bold; /* Example style for active link */
+}
+
+/* Section Styles */
+.section-bg {
+    background-color: #E3F2FD;
+    padding: 60px 0;
+}
+/* Additional text and button styles */
+h1, h2, h3, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Adjusted colors for better contrast on #dadee2 background */
+h1 {
+    font-size: 2.5rem;
+    color: #004d99; /* Dark gray for high contrast */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #006400; /* Slightly lighter dark gray */
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #8a2be2; /* Medium dark gray */
+}
+
+p {
+    font-size: 1rem;
+    color: #2F4F4F; /* Light gray for text */
+}
+.section-bg-alt {
+    background-color: #E3F2FD;
+    padding: 60px 0;
+}
+
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    color: #333;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #b47216;
+    margin: 1rem auto;
+}
+
+/* Home Section */
+#home .display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#home {
+    padding-top: 100px; /* Increase space from the top */
+}
+
+#home .display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#home .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #666;
+}
+
+#home img {
+    max-width: 250px;
+    border: 5px solid #f0ad4e;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 60px; /* Ensure image is positioned correctly */
+}
+
+.typing-container {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f0ad4e;
+    margin-top: 20px; /* Add space above the typing container */
+}
+
+/* About Section */
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #f0ad4e;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    background-color: #2f20d0;
+    font-weight: 500;
+}
+
+#about h3 {
+    margin-top: 2rem;
+}
+
+/* Projects Section */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card .project-info {
+    padding: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-info h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: #666;
+}
+
+/* Achivement Section */
+.highlight-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-card i {
+    color: #007bff;
+}
+
+.highlight-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.social-icons {
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #f0ad4e;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f4ecec;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Download Resume Button */
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ec330e; /* Button color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #e0380d; /* Darker button color on hover */
+    color: #fff;
+}
+
+.btn-download i {
+    margin-right: 8px; /* Spacing between icon and text */
+}
+nav ul li a.active, nav ul li a:hover {
+    color: #f9f9f9;
+    border-bottom: 2px solid #f9f9f9;
+}
